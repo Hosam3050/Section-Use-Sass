@@ -1,0 +1,23 @@
+
+@mixin flex ($justify:center,$align:center){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:$justify ;
+    align-items:$align ;
+}
+@mixin theme($isRight){
+    @if $isRight == 0{
+        // display: flex;
+        background-color: black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    @else{
+        background-color: black;
+        display: flex;
+        flex-direction:  row-reverse;
+        flex-wrap: wrap;
+    }
+}
+

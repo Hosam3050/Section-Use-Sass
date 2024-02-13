@@ -1,0 +1,109 @@
+
+@import "./_variables.scss";
+@import "./maxins";
+body{
+    // background-color: rgb(2, 139, 139);
+    image{
+        width: 10px;
+        height: 20px;
+    }
+    
+    img{
+        width: 42px;
+    background-color: $primaryColor;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    padding: 5px;
+    margin-right: 12px;
+    }
+
+    .countainer{
+    // background-color: aqua;
+        background-image: url(../imags/silhouettes-mountains-260nw-1247924815.webp);
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+    
+
+}
+
+.countainer{
+    padding: 0;
+    display: flex;
+    .spans{
+    padding: 0;
+    margin-left: 400PX;
+    background-color: black;
+    height: 430px;
+    width: 350px;
+    margin-top: 30px;
+    font-size: 70px;
+
+
+    }
+    .one{
+        color: red;
+        margin-left: 20px;
+
+    }
+    .two{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+
+    }
+    .three{
+        color: $primaryColor;
+        margin-left: 90px;
+
+    }
+    .four{
+        color: $primaryColor;
+        margin-left: 20px;
+
+    }
+    .txt{
+        color: rgb(255, 239, 219);
+margin-left: 100px;   
+margin-top: 40px; }
+
+h1{
+
+    text-transform: uppercase;
+    font-size: 60px;
+}
+p{
+    
+    color: rgb(138, 135, 130);
+}
+#p1{
+    margin-left: 100px;
+}
+.logo-land{
+    width: 100px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+
+}
+}
+
+button{
+    margin-left: 
+    120px !important; 
+}
+button:hover{
+    background-color: rgb(255, 239, 219) !important;
+    color: #000 !important;
+}
+
+.arabic {
+    @include theme(1)
+
+}
+.english{
+    @include theme(0)
+
+}
+.body{
+    @extend.english;
+}
